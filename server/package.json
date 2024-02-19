@@ -1,0 +1,23 @@
+{
+  "name": "edelweiss",
+  "version": "1.5.0",
+  "description": "Automation Bot using Node JS",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Stanley Owen <stanleyowen06@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.4.0",
+    "cors": "^2.8.5",
+    "deta": "^1.1.0",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-rate-limit": "^6.7.0",
+    "helmet": "^7.0.0"
+  },
+  "devDependencies": {
+    "jest": "^29.5.0"
+  }
+}
