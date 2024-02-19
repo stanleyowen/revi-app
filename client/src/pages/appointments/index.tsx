@@ -30,9 +30,14 @@ import { useAuthContext } from "@/firebase/auth";
 
 export default function EditBlog() {
   const [isAdmin, setIsAdmin] = useState(false);
-  const [appointments, setAppointments] = useState<any[]>(
-    JSON.parse(localStorage.getItem("appointments") ?? "[]")
-  );
+  const [appointments, setAppointments] = useState<any[]>([]);
+  //   check if localstorage exists in window
+  if (typeof window !== "undefined") {
+    const localData = localStorage.getItem("appointments");
+    if (localData) {
+      setAppointments(JSON.parse(localData));
+    }
+  }
 
   const router = useRouter();
   const { user }: any = useAuthContext();
