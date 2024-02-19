@@ -41,19 +41,6 @@ export default function Home() {
         <Typography sx={{ mt: 5, ml: "20%", mr: "20%", fontSize: 14 }}>
           Innovative Smart Robot with a focus on the health sector.
         </Typography>
-        <Button
-          variant="contained"
-          color="primary"
-          sx={{ mt: 5, mb: 5, ml: "20%", mr: "20%" }}
-          onClick={() =>
-            window.open(
-              "https://www.instagram.com/nusantarayouthfoundation/",
-              "_blank"
-            )
-          }
-        >
-          Join Us
-        </Button>
         {/* <KeyboardDoubleArrowDownRounded
           className="floating-icon"
           sx={{ fontSize: 30, mt: 10, color: "#90caf9" }}
